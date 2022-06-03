@@ -7,7 +7,8 @@ BOLD      700  */
 /* COLORS
 WHITE: #fff
 LBLUE:#02ADE6
-DBLUE: #333F51
+BLUE: #333F51
+DBLUE: #273142
 
 LGREY:#F0F0F0
 DGREY:#F2F2F2
@@ -31,13 +32,49 @@ body {
   line-height: 1;
 }
 
-.header {
+#header {
   background-color: #fff;
 }
 .header__container {
   display: flex;
   padding: 0.5rem;
 }
-.header__container__img {
+.header__container_img {
   display: inline-block;
+}
+
+#sidebar {
+  height: 94vh;
+  width: 25rem;
+
+  background-color: #333f51;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 18%;
+  justify-content: space-between;
+}
+
+.sidebar__list {
+  padding: 4rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar__list_el {
+  display: inline;
+}
+
+.active_el {
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  background-color: #273142;
 }
