@@ -43,16 +43,18 @@ body {
   display: inline-block;
 }
 
+.content {
+  display: flex;
+}
+
 #sidebar {
   height: 94vh;
-  width: 25rem;
-
   background-color: #333f51;
   color: #fff;
   font-size: 1.6rem;
   display: flex;
   flex-direction: column;
-  flex: 0 0 18%;
+  flex: 0 0 25%;
   justify-content: space-between;
 }
 
