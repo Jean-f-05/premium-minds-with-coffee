@@ -1,0 +1,32 @@
+/* FONT
+Source Sans Pro
+REGULAR   400 
+SEMI-BOLD 600 
+BOLD      700  */
+
+/* COLORS
+WHITE: #fff
+LBLUE:#02ADE6
+DBLUE: #333F51
+
+LGREY:#F0F0F0
+DGREY:#F2F2F2
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
