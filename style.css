@@ -104,6 +104,13 @@ body {
 .accordion {
 }
 
+.item__head {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+}
+
 .item__header {
   color: #273142;
   font-size: 1.8rem;
