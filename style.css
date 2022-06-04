@@ -32,6 +32,11 @@ body {
   line-height: 1;
 }
 
+/* HELPERS*/
+.mb-small {
+  margin-bottom: 3rem;
+}
+
 #header {
   background-color: #fff;
 }
@@ -84,4 +89,103 @@ body {
 #main {
   flex: 1;
   background-color: #f2f2f2;
+}
+
+.main__container {
+  padding: 5rem;
+}
+
+.main__container_header {
+  color: #273142;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.accordion {
+}
+
+.item__header {
+  color: #273142;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.item__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #273142;
+}
+
+.hidden-box {
+  background-color: #fff;
+}
+
+.hidden-box ul {
+  list-style: none;
+  font-size: 1.4rem;
+  padding: 3rem;
+}
+
+.hidden-box li {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #02ade6;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
