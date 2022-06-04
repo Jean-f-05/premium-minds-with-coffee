@@ -201,3 +201,26 @@ body {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.cta {
+  padding: 3rem 3rem 5rem;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 3.5rem;
+}
+
+.cta__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 35rem;
+}
+
+.cta__item label {
+  color: #333f51;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cta__item input {
+}
