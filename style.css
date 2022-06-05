@@ -101,9 +101,6 @@ body {
   font-weight: 400;
 }
 
-.accordion {
-}
-
 .item__head {
   display: flex;
   justify-content: space-between;
