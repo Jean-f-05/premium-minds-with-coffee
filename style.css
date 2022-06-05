@@ -258,3 +258,34 @@ body {
 .cta__item input:focus:invalid {
   border-bottom: 2px solid red;
 }
+
+/* BUTTONS */
+
+.buttons {
+  padding: 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.btn {
+  /* width: 25rem;
+  height: 2rem; */
+  padding: 1rem 8rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: 1px solid #eee;
+  border-radius: 2rem;
+}
+
+.btn-reset {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.btn-submit {
+  background-color: #02ade6;
+  color: #eee;
+  font-weight: 700;
+}
