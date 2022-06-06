@@ -144,6 +144,10 @@ body {
   background-color: var(--white);
 }
 
+.hide {
+  display: none;
+}
+
 .hidden-box ul {
   list-style: none;
   font-size: 1.4rem;
