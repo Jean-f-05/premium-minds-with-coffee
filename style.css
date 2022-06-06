@@ -129,6 +129,7 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: var(--lgrey);
+  border-bottom: 1px solid var(--blue);
 }
 
 .item__header {
@@ -304,7 +305,6 @@ body {
   /* padding: 1rem 8rem; */
   font-family: inherit;
   font-size: 1.6rem;
-  border: 1px solid var(--lgrey);
   border-radius: 4rem;
   text-decoration: none;
   transition: all 0.2s;
@@ -325,11 +325,13 @@ body {
 
 .btn-reset {
   background-color: var(--white);
+  border: 1px solid var(--lgrey);
   font-weight: 600;
 }
 
 .btn-submit {
   background-color: var(--lblue);
+  border: 1px solid var(--lblue);
   color: var(--lgrey);
   font-weight: 700;
   text-transform: uppercase;

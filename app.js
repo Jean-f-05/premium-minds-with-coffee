@@ -4,7 +4,7 @@ const dateYear = document.querySelector(".copyright-date");
 
 sideBar.addEventListener("click", (e) => {
   e.preventDefault();
-  console.dir(e.target);
+  console.log(e);
 });
 
 // function togglerFunc(element, postion) {
