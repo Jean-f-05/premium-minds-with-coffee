@@ -50,13 +50,14 @@
                   stroke-width="2"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M20 12H4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20 12H4"
                   />
                 </svg>
               </div>
               <div class="hidden-box">
+                <form action="" method="get">
                 <ul>
                   <li class="form__checkbox">
                     <input
@@ -111,7 +112,6 @@
               </div>
 
               <div class="hidden-box">
-                <form action="">
                 <div class="cta">
 
                     <div class="cta__item">
@@ -129,6 +129,7 @@
                     <label for="password">Palavra-passe</label>
                     <input
                     type="password"
+                    minlength="6"
                       name="password"
                       id="password"
                       placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"
@@ -140,6 +141,7 @@
                     <label for="tel">Telefone</label>
                     <input
                       type="tel"
+                      minlength="12"
                       name="tel"
                       id="tel"
                       value="+351 "
