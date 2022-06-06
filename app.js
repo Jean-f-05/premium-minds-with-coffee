@@ -3,7 +3,7 @@ const toogler = document.querySelectorAll(".item__icon");
 const dateYear = document.querySelector(".copyright-date");
 
 sideBar.addEventListener("click", function (e) {
-  e.preventDefault();
+  // e.preventDefault();
   if (!e.target.classList.contains("sidebar__list-a")) {
     return;
   } else {
@@ -13,12 +13,6 @@ sideBar.addEventListener("click", function (e) {
     e.target.classList.add("active_el");
   }
 });
-
-// function togglerFunc(element, postion) {
-//   el.classList.add("hide");
-//   el.nextElementSibling.classList.remove("hide");
-//   this.closest(".item__head").nextElementSibling.classList.add("hide");
-// }
 
 toogler.forEach((el) => {
   el.addEventListener("click", function () {
@@ -32,11 +26,6 @@ toogler.forEach((el) => {
       el.previousElementSibling.classList.remove("hide");
       this.closest(".item__head").nextElementSibling.classList.remove("hide");
     }
-
-    // this.closest(".item__head").nextElementSibling.classList.add("hide");
-    // const header = this.parentElement;
-    // this.remove("item-icon");
-    // header.insertAdjacentHTML("beforeend", "");
   });
 });
 
@@ -48,4 +37,4 @@ const init = () => {
   setYear();
 };
 
-window.onload = init();
+init();
