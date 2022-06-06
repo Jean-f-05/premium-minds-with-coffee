@@ -2,9 +2,16 @@ const sideBar = document.querySelector(".sidebar__list");
 const toogler = document.querySelectorAll(".item__icon");
 const dateYear = document.querySelector(".copyright-date");
 
-sideBar.addEventListener("click", (e) => {
+sideBar.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log(e);
+  if (!e.target.classList.contains("sidebar__list-a")) {
+    return;
+  } else {
+    this.querySelectorAll(".sidebar__list-a").forEach((el) => {
+      el.classList.remove("active_el");
+    });
+    e.target.classList.add("active_el");
+  }
 });
 
 // function togglerFunc(element, postion) {
