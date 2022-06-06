@@ -37,4 +37,8 @@ function setYear() {
   dateYear.innerHTML = new Date().getFullYear();
 }
 
-setYear();
+const init = () => {
+  setYear();
+};
+
+window.onload = init();
