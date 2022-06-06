@@ -105,6 +105,10 @@ body {
   background-color: var(--dblue);
 }
 
+.copyright-date {
+  display: inline;
+}
+
 #main {
   flex: 1;
   background-color: var(--lgrey);

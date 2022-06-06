@@ -1,7 +1,6 @@
 const sideBar = document.querySelector(".sidebar__list");
 const toogler = document.querySelectorAll(".item__icon");
-
-// console.log(sideBar);
+const dateYear = document.querySelector(".copyright-date");
 
 sideBar.addEventListener("click", (e) => {
   e.preventDefault();
@@ -33,3 +32,9 @@ toogler.forEach((el) => {
     // header.insertAdjacentHTML("beforeend", "");
   });
 });
+
+function setYear() {
+  dateYear.innerHTML = new Date().getFullYear();
+}
+
+setYear();
