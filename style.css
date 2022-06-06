@@ -65,15 +65,20 @@ body {
 }
 
 .sidebar__list {
-  padding: 4rem;
+  padding: 7rem 4rem 4rem;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.sidebar__list_el {
+.sidebar__list-el {
   display: inline;
+}
+
+.sidebar__list-a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .active_el {
