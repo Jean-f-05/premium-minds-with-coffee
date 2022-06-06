@@ -25,6 +25,7 @@ WARNING: #e8590c
   --dgrey: #ced4da;
   --white: #fff;
   --warning: #e8590c;
+  --text: #7f8fa4;
 }
 
 *,
@@ -188,7 +189,7 @@ body {
 
 .form__checkbox-btn {
   position: absolute;
-  top: 0;
+  top: 0.2rem;
   left: 0;
   height: 2rem;
   width: 2rem;
@@ -251,7 +252,7 @@ body {
 }
 
 .cta__item input::placeholder {
-  color: var(--lgrey);
+  color: rgba(39, 49, 66, 0.2);
 }
 
 .cta__item {
@@ -262,7 +263,7 @@ body {
 }
 
 .cta__item label {
-  color: var(--blue);
+  color: var(--text);
   font-size: 1.6rem;
   font-weight: 700;
 }
