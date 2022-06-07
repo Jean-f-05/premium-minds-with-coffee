@@ -275,7 +275,7 @@ body {
   font-size: 1.5rem;
   padding: 0.7rem;
   border: none;
-  border-bottom: 2px solid var(--lgrey);
+  border-bottom: 2px solid var(--blue);
   /* max-width: 80%; */
 }
 
