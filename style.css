@@ -76,6 +76,7 @@ body {
   flex-direction: column;
   flex: 0 0 14%;
   justify-content: space-between;
+  /* height: calc(100vh -4.5rem); */
 }
 
 .sidebar__list {
@@ -247,8 +248,8 @@ body {
 .cta {
   padding: 3rem 3rem 5rem;
   display: grid;
-  grid-template-columns: min-content 1fr;
-  gap: 3.5rem;
+  grid-template-columns: repeat(2, max(33%));
+  gap: 4.5rem;
 }
 
 .cta__item input::placeholder {
@@ -259,7 +260,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 35rem;
+  /* width: 100%; */
 }
 
 .cta__item label {
@@ -275,6 +276,7 @@ body {
   padding: 0.7rem;
   border: none;
   border-bottom: 2px solid var(--lgrey);
+  /* max-width: 80%; */
 }
 
 .cta__item input:focus {
@@ -336,4 +338,53 @@ body {
   color: var(--lgrey);
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+/*  BREAKING POINTS
+600px - 37.5em 
+800px - 50em
+1100px - 68.75em
+*/
+
+@media (max-width: 68.75em) {
+  .cta {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 50em) {
+  html {
+    font-size: 56%;
+  }
+
+  .buttons {
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cta {
+    grid-template-columns: max(75%);
+  }
+}
+
+@media (max-width: 37.5em) {
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar__list {
+    padding: 3rem 0 1rem;
+    text-align: center;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .main__container_header {
+    text-align: center;
+  }
 }
